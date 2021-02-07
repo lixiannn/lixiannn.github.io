@@ -1,0 +1,122 @@
+body {
+    background-color: rgb(244,194,194);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(32,178,170);
+  }
+  
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+background-color: rgb(0,128,128);
+}
+
+#aboutme {
+    margin: 2px;
+}
+
+.me {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2px;
+  margin: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+.me > * {
+  flex: 1 1 360px;
+  padding: 2px;
+  margin: 2px;
+}
+
+.img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.right {
+  font-size: larger;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  margin: 2em auto;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  margin: 1em;
+  padding: 1em;
+  flex: 1 1 auto;
+  background-color: rgba(255,255,255,0.6);
+
+  /* whatever the breakpoints are that scaffold has set.*/
+  @media screen and (min-width: 320px) {
+    width: 100vw;
+  }
+  
+  @media screen and (min-width: 640px) {
+    width: calc(50vw - 4em);
+  }
+
+  @media screen and (min-width: 960px) {
+    width: calc(25vw - 4em);
+    
+    &:first-child {
+      //margin-left: auto;
+    }
+    
+    &:last-child {
+      //margin-right: auto;
+    }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    
+  }
+}
+
+#contact {
+    margin: 1em;
+    padding: 1em;
+}
